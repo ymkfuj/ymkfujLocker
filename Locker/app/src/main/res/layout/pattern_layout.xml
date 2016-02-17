@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/patternHint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_horizontal"
+        android:text="@string/set_map_less_point"
+        android:textSize="21sp"
+        android:textColor="@color/text_black_1"
+        android:layout_marginTop="75dp"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:id="@+id/switchView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="75dp">
+            <LinearLayout
+                android:id="@+id/switch_number"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:gravity="center">
+                <TextView
+                    android:id="@+id/switch_icon"
+                    android:layout_width="23dp"
+                    android:layout_height="23dp"
+                    android:background="@drawable/icon_change_lock_pin"
+                    android:layout_marginRight="13dp"
+                    android:visibility="gone"/>
+                <TextView
+                    android:id="@+id/textHint"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/switch_number"
+                    android:textColor="@color/switch_psw_button"
+                    android:textSize="14sp"
+                    android:paddingTop="19dp"
+                    android:paddingBottom="19dp"
+                    android:gravity="center_horizontal"
+                    android:layout_centerHorizontal="true"/>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/split_line"
+                android:layout_marginLeft="22.5dp"
+                android:layout_marginRight="22.5dp"/>
+        </RelativeLayout>
+
+        <com.ctflab.locker.view.LockPatternView
+            android:id="@+id/pattern"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/switchView"
+            android:layout_centerHorizontal="true"/>
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>

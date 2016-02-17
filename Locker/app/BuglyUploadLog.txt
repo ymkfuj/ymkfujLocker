@@ -1,0 +1,2 @@
+/Users/anguanjia/mywork/Locker/app/build/outputs/mapping/play/release/app-play-mapping.txt --> 1252d1b57d34b63277a6fbb23c2a365366b15cd8
+/Users/anguanjia/mywork/Locker/app/build/outputs/mapping/xiaomi/release/app-xiaomi-mapping.txt --> 1252d1b57d34b63277a6fbb23c2a365366b15cd8

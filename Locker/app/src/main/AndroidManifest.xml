@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.ctflab.locker">
+
+    <!-- 添加快捷方式 -->
+    <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT" />
+    <!-- 移除快捷方式 -->
+    <uses-permission android:name="com.android.launcher.permission.UNINSTALL_SHORTCUT" />
+    <!-- 查询快捷方式 -->
+    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_LOGS" />
+	<uses-permission android:name="android.permission.GET_TASKS"/>
+    <uses-permission android:name="android.permission.BLUETOOTH"/>
+    <uses-permission android:name="android.permission.PACKAGE_USAGE_STATS" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+
+    <application
+        android:name=".LockerApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:screenOrientation="portrait"
+            android:name=".view.SplashActivity"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:excludeFromRecents="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:screenOrientation="portrait"
+            android:name=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+        </activity>
+        <activity
+            android:screenOrientation="portrait"
+            android:name=".view.AuthenticationActivity"
+            android:theme="@style/AppTheme.NoActionBar"/>
+
+        <service android:name=".services.LockerService">
+            <intent-filter>
+                <action android:name="com.ctflab.locker.daemon" />
+            </intent-filter>
+        </service>
+        <receiver android:name=".services.LockerService$RebootReceiver">
+            <intent-filter android:priority="2147483647" >
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+                <action android:name="android.net.wifi.WIFI_STATE_CHANGED" />
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+                <action android:name="android.net.wifi.STATE_CHANGE" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name=".reciever.DeviceAdminManager$DeviceAdminProof"
+            android:description="@string/app_uninstall_description"
+            android:label="@string/app_name"
+            android:permission="android.permission.BIND_DEVICE_ADMIN">
+            <meta-data
+                android:name="android.app.device_admin"
+                android:resource="@xml/device_admin_uninstall_protect"/>
+            <intent-filter>
+                <action android:name="android.app.action.DEVICE_ADMIN_ENABLED"/>
+            </intent-filter>
+        </receiver>
+        <activity
+            android:screenOrientation="portrait"
+            android:name="com.anguanjia.framework.components.AnguanjiaActivity"/>
+
+        <activity
+            android:screenOrientation="portrait"
+            android:name=".view.SettingsActivity"
+            android:label="@string/title_activity_settings"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity
+            android:screenOrientation="portrait"
+            android:name=".view.ForgetPasswordActivity"
+            android:label="@string/title_activity_forget_password"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity
+            android:screenOrientation="portrait"
+            android:name=".view.EmailAddActivity"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateAlwaysVisible|adjustResize"/>
+        <activity
+            android:screenOrientation="portrait"
+            android:name=".view.EmailChangeActivity"
+            android:windowSoftInputMode="stateAlwaysVisible|adjustResize"/>
+        <activity
+            android:name=".TestActivity"
+            android:label="@string/title_activity_frame"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:screenOrientation="portrait"
+            android:name=".view.AboutActivity"
+            android:theme="@style/AppTheme.NoActionBar"/>
+
+        <receiver android:name=".services.LockerReceiver">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+                <action android:name="android.intent.action.USER_PRESENT" />
+            </intent-filter>
+        </receiver>
+        <meta-data
+            android:name="CHANNEL"
+            android:value="${CHANNEL_VALUE}" />
+        <meta-data
+            android:name="DEBUG"
+            android:value="${DEBUG}" />
+    </application>
+</manifest>

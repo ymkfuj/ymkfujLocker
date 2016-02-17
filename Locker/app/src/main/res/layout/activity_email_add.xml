@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="18dp"
+    android:paddingRight="18dp"
+    tools:context="com.ctflab.locker.view.EmailAddActivity">
+
+
+    <TextView
+        android:id="@+id/txtAddEmailSkip"
+        android:layout_width="wrap_content"
+        android:layout_height="55dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:gravity="center_vertical"
+        android:text="@string/email_add_skip"
+        android:textAppearance="@style/text_14_light"
+        android:textColor="@color/text_blue" />
+
+    <TextView
+        android:layout_below="@id/txtAddEmailSkip"
+        android:id="@+id/txtAddEmailTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="6dp"
+        android:text="@string/email_add_title"
+        android:textAppearance="@style/text_21_light"
+        android:textColor="@color/text_black_1" />
+
+    <TextView
+        android:id="@+id/txtAddEmailNote"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtAddEmailTitle"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:text="@string/email_add_note"
+        android:textAppearance="@style/text_14_regular"
+        android:textColor="@color/text_black_2" />
+
+
+    <Button
+        android:id="@+id/btnAddEmailSave"
+        style="@style/button_single"
+        android:layout_alignParentBottom="true"
+        android:text="@string/email_add_save" />
+
+    <EditText
+        android:id="@+id/edtAddEmailInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/btnAddEmailSave"
+        android:layout_marginBottom="20dp"
+        android:inputType="textEmailAddress"
+        android:singleLine="true"
+        android:textAppearance="@style/text_16_regular"
+        android:textColor="@color/text_black_1"
+        android:textColorHint="@color/text_red" />
+
+</RelativeLayout>

@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.ctflab.locker.view.SettingsActivity">
+
+    <ScrollView
+        android:id="@+id/layoutSetting"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_marginLeft="18dp"
+                android:layout_marginRight="18dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:text="@string/setting_lock_state"
+                    android:textAppearance="@style/text_16_regular"
+                    android:textColor="@color/text_black_1" />
+
+                <RelativeLayout
+                    android:layout_width="80dp"
+                    android:layout_height="70dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true">
+
+                    <com.ctflab.locker.widget.SwitchButton.CheckSwitchButton
+                        android:id="@+id/swSettingState"
+                        android:layout_width="wrap_content"
+                        android:layout_height="20dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:checked="false"
+                        android:textOff="@string/setting_off"
+                        android:textOn="@string/setting_on" />
+
+                    <View
+                        android:id="@+id/ll_state"
+                        android:layout_width="80dp"
+                        android:layout_height="70dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true" />
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/common_gray" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_marginBottom="1dp"
+                android:layout_marginLeft="18dp"
+                android:layout_marginRight="18dp"
+                android:background="@drawable/selector_common"
+                android:gravity="bottom"
+                android:text="@string/setting_header_normal"
+                android:textAppearance="@style/text_14_medium"
+                android:textColor="@color/text_black_3" />
+
+            <RelativeLayout
+                android:id="@+id/viewSettingLockType"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:background="@drawable/selector_common"
+                android:paddingLeft="18dp"
+                android:paddingRight="18dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:text="@string/setting_lock_type"
+                    android:textAppearance="@style/text_16_regular"
+                    android:textColor="@color/text_black_1" />
+
+                <TextView
+                    android:id="@+id/txtSettingLockStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:checked="false"
+                    android:text="PIN" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/viewSettingEmail"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:background="@drawable/selector_common">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="18dp"
+                        android:layout_marginRight="18dp"
+                        android:text="@string/setting_email"
+                        android:textAppearance="@style/text_16_regular"
+                        android:textColor="@color/text_black_1" />
+
+                    <TextView
+                        android:id="@+id/txtSettingEmailHint"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="18dp"
+                        android:layout_marginRight="18dp"
+                        android:text="@string/setting_email_hint"
+                        android:textAppearance="@style/text_14_regular"
+                        android:textColor="@color/text_red" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/txtSettingPassword"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:background="@drawable/selector_common"
+                android:gravity="center_vertical"
+                android:paddingLeft="18dp"
+                android:paddingRight="18dp"
+                android:text="@string/setting_change_password"
+                android:textAppearance="@style/text_16_regular"
+                android:textColor="@color/text_black_1" />
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/common_gray" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_marginBottom="1dp"
+                android:layout_marginLeft="18dp"
+                android:layout_marginRight="18dp"
+                android:gravity="bottom"
+                android:text="@string/setting_header_advance"
+                android:textAppearance="@style/text_14_medium"
+                android:textColor="@color/text_black_3" />
+
+            <RelativeLayout
+                android:id="@+id/viewSettingLanguage"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:background="@drawable/selector_common"
+                android:visibility="gone">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="18dp"
+                    android:layout_marginRight="18dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:text="@string/setting_language"
+                        android:textAppearance="@style/text_16_regular"
+                        android:textColor="@color/text_black_1" />
+
+                    <TextView
+                        android:id="@+id/txtSettingLanguage"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:checked="false"
+                        android:text="Chinese(simplified)" />
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/viewSettingDelay"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:background="@drawable/selector_common">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="18dp"
+                    android:layout_marginRight="18dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:text="@string/setting_lock_delay"
+                        android:textAppearance="@style/text_16_regular"
+                        android:textColor="@color/text_black_1" />
+
+                    <TextView
+                        android:id="@+id/txtSettingDelay"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:checked="false"
+                        android:text="0 Second" />
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="30dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="18dp"
+                        android:layout_marginRight="18dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_centerVertical="true"
+                            android:text="@string/setting_anti_uninstall"
+                            android:textAppearance="@style/text_16_regular"
+                            android:textColor="@color/text_black_1" />
+
+                        <com.ctflab.locker.widget.SwitchButton.CheckSwitchButton
+                            android:id="@+id/swSettingAntiUninstall"
+                            android:layout_width="wrap_content"
+                            android:layout_height="20dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:checked="false"
+                            android:textOff="@string/setting_off"
+                            android:textOn="@string/setting_on" />
+                    </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/txtSettingAntiUninstallHint"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="18dp"
+                        android:layout_marginRight="18dp"
+                        android:text="@string/setting_anti_uninstall_hint"
+                        android:textAppearance="@style/text_14_regular"
+                        android:textColor="@color/text_red" />
+                </LinearLayout>
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <RelativeLayout
+        android:id="@+id/layout_services_hint"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/transparent">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="18dp"
+            android:layout_marginRight="18dp"
+            android:src="@mipmap/services_hint" />
+    </RelativeLayout>
+</FrameLayout>

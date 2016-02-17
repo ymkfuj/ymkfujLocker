@@ -1,0 +1,160 @@
+<resources>
+    <string name="title_activity_about">About</string>
+    <string name="title_activity_settings">Settings</string>
+    <string name="title_activity_forget_password">Forget Password</string>
+    <string name="title_activity_add_email">Add Email</string>
+    <string name="title_activity_change_email">Change Email</string>
+
+
+    <string name="key_lock_state">key_lock_state</string>
+    <string name="key_lock_type">key_lock_type</string>
+    <string name="key_change_password">key_change_password</string>
+    <string name="key_email">key_email</string>
+    <string name="key_lock_delay">key_lock_delay</string>
+    <string name="key_language">key_language</string>
+    <string name="key_antiuninstall">key_antiuninstall</string>
+    <string name="title_activity_frame">FrameActivity</string>
+
+    <string name="app_name">Lock Master</string>
+    <string name="app_name_sub">Your Privacy Keeper</string>
+    <string name="app_uninstall_description">Prevent Lock Master being uninstalled</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+    <string name="menu_lock">Lock Master</string>
+    <string name="menu_setting">Settings</string>
+    <string name="menu_feedback">Feedback</string>
+    <string name="menu_score">Rate us</string>
+    <string name="menu_about">About</string>
+
+    <string name="tips_main_permission_title">Enable Usage Acess</string>
+    <string name="tips_main_permission">In Android 5.1 or above,you must permit usage access for Lock Master so that you can use Lock Master feature.</string>
+    <string name="tips_main_services">Lock status of Lock Master is off,and all lock settings can not take effect.We suggest you tap here for turnning on it.</string>
+
+
+    <string name="setting_header_normal">Basics</string>
+    <string name="setting_header_advance">Advanced</string>
+
+    <string name="setting_lock_state">Lock Status</string>
+    <string name="setting_lock_type">Lock Style</string>
+    <string name="setting_change_password">Change Password</string>
+    <string name="setting_email">Security Email</string>
+    <string name="setting_email_hint">A security email is strongly suggested.</string>
+    <string name="setting_lock_delay">Delay Lock</string>
+    <string name="setting_language">Change Language</string>
+    <string name="setting_anti_uninstall">Anti-uninstall</string>
+    <string name="setting_anti_uninstall_hint">you need to activate the app in the device manager when you open anti-uninstall.</string>
+    <string name="setting_anti_uninstall_hint_2">To uninstall Lock Master, you need to turn off the anti-uninstall option.</string>
+
+    <string name="permission_pop_title">Usage Access is needed</string>
+    <string name="permission_pop_message">Disable usage access of Lock Master will cause it fails to work normally.Please enable it back.</string>
+    <string name="permission_close_noti">Anti-uninstall protection is enabled,do you want to diable it?</string>
+
+    <string name="setting_off">off</string>
+    <string name="setting_on">on</string>
+    <string name="setting_check_update">Check for updates</string>
+    <string name="setting_contact">Contact us</string>
+    <string name="setting_right">© 2016 Connect the Future lab\nAll Rights Reserved</string>
+
+    <string-array name="setting_lock_style">
+        <item>PIN</item>
+        <item>Pattern</item>
+    </string-array>
+
+    <string-array name="dialog_lock_delay">
+        <item>0  Second</item>
+        <item>15 Second</item>
+        <item>30 Second</item>
+        <item>1  Minute</item>
+        <item>5  Minutes</item>
+        <item>10 Minutes</item>
+        <item>Unitl Lock</item>
+    </string-array>
+
+    <string-array name="dialog_language">
+        <item>中文(简体)</item>
+        <item>English</item>
+    </string-array>
+
+    <!--pattern相关-->
+    <string name="set_map_modle">Set a pattern for apps</string>
+    <string name="set_map_doing">Release finger when done</string>
+    <string name="set_map_less_point">Connect at least 4 dots \nPlease try again</string>
+    <string name="set_map_confirm">Confirm your pattern</string>
+    <string name="set_map_not_match">Pattern don\'t match \nPlease set a pattern for apps again</string>
+    <string name="draw_pattern">Draw pattern to unlock</string>
+    <string name="draw_old_pattern">Draw your old pattern</string>
+    <string name="draw_new_pattern">Draw your new pattern</string>
+    <string name="draw_pattern_wrong">Pattern don\'t match,Please try again</string>
+    <string name="switch_number">Use the number password</string>
+
+    <string name="set_number_password">Enter your PIN</string>
+    <string name="set_number_password_ensure">Confirm your PIN</string>
+    <string name="set_number_password_diff">PINs don\'t matchs\nPlease re-enter</string>
+    <string name="input_number_wrong">PINs don\'t matchs\nPlease re-enter</string>
+    <string name="switch_pattern">Use the graphical password</string>
+    <string name="input_old_password">Comfirm your old PIN</string>
+    <string name="input_new_password">Enter your new PIN</string>
+
+    <string name="forget_password">Forget password？</string>
+
+    <string name="email_add_skip"><u>Skip</u></string>
+    <string name="email_add_title">Please enter your security email:</string>
+    <string name="email_add_note">In case you forget the password, a security email is strongly suggested. When you forget the password, you can retrieve it by auto email.</string>
+    <string name="email_add_error">Email address format error</string>
+    <string name="email_add_save">SAVE</string>
+
+    <string name="email_change_current">Current security email:</string>
+    <string name="email_change_title">Please set a new security email</string>
+    <string name="email_change_save">SAVE</string>
+    <string name="email_change_toast">Security Email set up successfully</string>
+    <string name="email_change_hint">Please input new Security Email</string>
+
+    <string name="title_email_change">Email address</string>
+
+    <string name="forget_password_error">Dear User:\n       I\'m sorry to tell you that you can not retrieve the password since you haven\'t set a security email yet.</string>
+    <string name="forget_password_subtitle">Your security email:</string>
+    <string name="forget_password_note">            If you forget your password, please click the \"Forget Password\" button below, and we will sent a mail to your security email.You can find the password there.</string>
+    <string name="forget_password_success">            We have sent a mail to your security email.You can retrieve your password by this email.\nIf you haven\'t receive the secret mail, try to find it in the spam mail.</string>
+    <string name="forget_password_net">Dear User:\n      Network communication is abnormal, security authorization email can not be sent out. Please try again to retrieve your password .</string>
+    <string name="forget_password_button1">Password Recovery</string>
+    <string name="forget_password_button2">OK</string>
+
+    <string name="email_title">Contact us</string>
+    <string name="email_address">help.lock@ctflab.com</string>
+    <string name="email_choose">Please choose Email app:</string>
+
+    <string name="rate_title">Love Lock Master？</string>
+    <string name="rate_1">Do you like it? Please give us 5 stars if you do!</string>
+    <string name="rate_2">Encourage us to make the app better!</string>
+
+    <string name="dialog_ok">OK</string>
+    <string name="dialog_cancel">Cancel</string>
+    <string name="dialog_rate">Go to rate</string>
+    <string name="dialog_permit">Permit</string>
+
+
+    <string name="permission_title">Please follow these steps to open the application permissions</string>
+    <string name="permission_step_1">First Step:\nClick onLock Master icon</string>
+    <string name="permission_step_2">Next:\nTurn this on to keep LockApps working perfectly</string>
+
+
+    <string name="update_newversion_title">New Version Available(%s)</string>
+    <string name="update_notnow">Not Now</string>
+    <string name="update_now">Upgrade</string>
+    <string name="update_checking">Check Update</string>
+    <string name="update_tips_title">Tips</string>
+    <string name="update_up_to_date">The version is already up-to-date!</string>
+
+    <string name="guide_0">App Lock</string>
+    <string name="guide_0_sub">Lock your apps \nand protect your privacy</string>
+    <string name="guide_1">PIN</string>
+    <string name="guide_1_sub">Safe and Easy to remember\n</string>
+    <string name="guide_2">Pattern</string>
+    <string name="guide_2_sub">Simplicity but not simple\n</string>
+    <string name="splash">Lock Master</string>
+    <string name="splash_sub">Your Privacy Keeper</string>
+
+    <string name="start">Try it now</string>
+</resources>

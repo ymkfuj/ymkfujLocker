@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/common_mask_lite">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/text_white"
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="19sp"
+            android:textColor="@color/text_black_1"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginBottom="20dp"
+            android:text="@string/permission_pop_title"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/BottomAlertDialgMessage"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginBottom="30dp"
+            android:text="@string/permission_pop_message"/>
+
+        <Button
+            android:id="@+id/permissionOk"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/button_single"
+            android:layout_marginLeft="18dp"
+            android:layout_marginRight="18dp"
+            android:text="@string/dialog_ok"/>
+
+    </LinearLayout>
+</RelativeLayout>

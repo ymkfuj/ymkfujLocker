@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#00b9e6</color>
+
+    <color name="common_blue">#00b9ff</color>
+    <color name="common_gray">#381d1d26</color>
+    <color name="common_split">#191d1d26</color>
+    <color name="common_white">#111d1d26</color>
+    <color name="common_yellow">#ffac4d</color>
+    <color name="common_red">#38ff3366</color>
+    <color name="common_mask">#cc000000</color>
+    <color name="common_mask_lite">#1c000000</color>
+
+    <color name="button_white">#ffffff</color>
+    <color name="button_white_pressed">#ccffffff</color>
+
+    <color name="text_white">#ffffff</color>
+    <color name="text_black_1">#1d1d26</color>
+    <color name="text_black_2">#b21d1d26</color>
+    <color name="text_black_3">#591d1d26</color>
+    <color name="text_blue">#00b9ff</color>
+    <color name="text_red">#ff3366</color>
+
+    <drawable name="tips_red">#ff3366</drawable>
+    <drawable name="tips_yellow">#ffac4c</drawable>
+    <drawable name="tips_red_click">#e8305f</drawable>
+    <drawable name="tips_yellow_click">#e89d49</drawable>
+
+    <color name="split_line">#e8e8e9</color>
+
+    <drawable name="common_normal">#00000000</drawable>
+    <drawable name="common_click">#191d1d26</drawable>
+
+    <color name="switch_psw_button">#b31d1d26</color>
+
+    <drawable name="button_normal">#00b9ff</drawable>
+    <drawable name="button_click">#03a9e9</drawable>
+    <drawable name="button_disable">#111d1d26</drawable>
+    <drawable name="button_cancel_normal">#381d1d26</drawable>
+    <drawable name="button_cancel_click">#b7b7ba</drawable>
+
+    <drawable name="transparent">#00000000</drawable>
+
+    <drawable name="list_normal">#ffffff</drawable>
+    <drawable name="list_click">#111d1d26</drawable>
+</resources>

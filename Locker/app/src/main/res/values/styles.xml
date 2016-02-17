@@ -1,0 +1,200 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/common_blue</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="text_36_light">
+        <item name="android:textSize">36sp</item>
+        //文字大小
+    </style>
+
+    <style name="text_34_light">
+        <item name="android:textSize">34sp</item>
+        //文字大小
+    </style>
+
+    <style name="text_24_light">
+        <item name="android:textSize">24sp</item>
+        //文字大小
+    </style>
+
+    <style name="text_21_light">
+        <item name="android:textSize">21sp</item>
+        //文字大小
+    </style>
+
+    <style name="text_20_light">
+        <item name="android:textSize">20sp</item>
+        //文字大小
+    </style>
+
+    <style name="text_19_medium">
+        <item name="android:textSize">19sp</item>
+        //文字大小
+    </style>
+
+    <style name="text_18_light">
+        <item name="android:textSize">18sp</item>
+        //文字大小
+    </style>
+
+    <style name="text_18_regular">
+        <item name="android:textSize">18sp</item>
+        //文字大小
+    </style>
+
+    <style name="text_16_regular">
+        <item name="android:textSize">16sp</item>
+        //文字大小
+    </style>
+
+    <style name="text_14_medium">
+        <item name="android:textSize">14sp</item>
+        //文字大小
+    </style>
+
+    <style name="text_14_regular">
+        <item name="android:textSize">14sp</item>
+        //文字大小
+    </style>
+
+    <style name="text_14_light">
+        <item name="android:textSize">14sp</item>
+        //文字大小
+    </style>
+
+    <style name="text_10_light">
+        <item name="android:textSize">10sp</item>
+        //文字大小
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="Widget.Design.AppBarLayout" parent="ThemeOverlay.AppCompat.Dark.ActionBar">
+        <item name="titleTextAppearance">@style/ToolbarStyleTitleTextAppearance</item>
+        <item name="elevation">0dp</item>
+    </style>
+
+    <style name="button_single">
+        <item name="android:textColor">@color/text_white</item>
+        <item name="android:textAppearance">@style/text_16_regular</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">55dp</item>
+        <item name="android:background">@drawable/selector_button_common</item>
+        <item name="android:layout_marginBottom">15dp</item>
+    </style>
+
+    <style name="button_white">
+        <item name="android:textColor">@color/text_blue</item>
+        <item name="android:textAppearance">@style/text_16_regular</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">55dp</item>
+        <item name="android:background">@drawable/selector_button_white</item>
+        <item name="android:layout_marginBottom">15dp</item>
+    </style>
+
+    <style name="button_single_cancel">
+        <item name="android:textColor">@color/text_white</item>
+        <item name="android:textAppearance">@style/text_16_regular</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">55dp</item>
+        <item name="android:background">@drawable/selector_button_cancel</item>
+        <item name="android:layout_marginBottom">15dp</item>
+    </style>
+
+    <style name="button_cancel">
+        <item name="android:textColor">@color/text_white</item>
+        <item name="android:textAppearance">@style/text_16_regular</item>
+        <item name="textAllCaps">true</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">55dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_marginRight">9dp</item>
+        <item name="android:background">@drawable/selector_button_cancel</item>
+        <item name="android:layout_marginBottom">15dp</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="button_ok">
+        <item name="android:textColor">@color/text_white</item>
+        <item name="android:textAppearance">@style/text_16_regular</item>
+        <item name="textAllCaps">true</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">55dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_marginLeft">9dp</item>
+        <item name="android:background">@drawable/selector_button_common</item>
+        <item name="android:layout_marginBottom">15dp</item>
+    </style>
+
+    <style name="ToolbarStyle" parent="Base.Widget.AppCompat.Toolbar">
+        <item name="titleTextAppearance">@style/ToolbarStyleTitleTextAppearance</item>
+    </style>
+
+    <style name="ToolbarStyleTitleTextAppearance">
+        <item name="android:textSize">19sp</item>
+        <item name="android:textColor">@color/text_black_1</item>
+    </style>
+
+    <style name="BottomAlertDialg" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="android:windowAnimationStyle">@style/Base.Animation.AppCompat.DropDownUp</item>
+        <item name="android:windowBackground">@drawable/dialog_material_background_light</item>
+        <item name="alertDialogStyle">@style/BottomAlertDialgStyle</item>
+        <item name="buttonBarPositiveButtonStyle">@style/PositiveButtonStyle</item>
+        <item name="buttonBarNegativeButtonStyle">@style/NegativeButtonStyle</item>
+        <item name="windowMinWidthMajor">65%</item>
+        <item name="windowMinWidthMinor">100%</item>
+    </style>
+
+    <style name="BottomAlertDialgTitle" parent="Base.DialogWindowTitle.AppCompat">
+        <item name="android:textAppearance">@style/BottomAlertDialgTitleTextAppearance</item>
+    </style>
+
+    <style name="BottomAlertDialgTitleTextAppearance" parent="Base.TextAppearance.AppCompat.Title">
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="BottomAlertDialgStyle" parent="AlertDialog.AppCompat.Light">
+        <item name="android:layout">@layout/alert_dialog_material</item>
+        <item name="singleChoiceItemLayout">@layout/dialog_singlechoice_material</item>
+    </style>
+
+    <style name="BottomAlertDialgMessage">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@color/text_black_2</item>
+        <item name="android:lineSpacingMultiplier">1.4</item>
+    </style>
+
+    <style name="PositiveButtonStyle">
+        <item name="android:textColor">@color/text_white</item>
+        <item name="android:textAppearance">@style/text_16_regular</item>
+        <item name="textAllCaps">true</item>
+        <item name="android:layout_height">55dp</item>
+        <item name="android:minHeight">55dp</item>
+        <item name="android:layout_marginLeft">15dp</item>
+        <item name="android:background">@drawable/selector_button_common</item>
+    </style>
+
+    <style name="NegativeButtonStyle">
+        <item name="android:textColor">@color/text_white</item>
+        <item name="android:textAppearance">@style/text_16_regular</item>
+        <item name="textAllCaps">true</item>
+        <item name="android:layout_height">55dp</item>
+        <item name="android:minHeight">55dp</item>
+        <item name="android:layout_marginLeft">15dp</item>
+        <item name="android:background">@drawable/selector_button_cancel</item>
+    </style>
+
+    <style name="LoadingDialog" parent="Theme.AppCompat.Light.Dialog">
+
+    </style>
+
+</resources>
